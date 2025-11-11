@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="clouds" aria-hidden="true">
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+  </div>
+
+  <header class="navbar">
+    <div class="nav-inner container">
+      <a class="brand" href="#home">My Portfolio</a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#likes">Likes</a>
+        <a href="#contact">Contact</a>
+        <a href="projects.html">My Projects</a>
+        <a href="photos.html">My Photos</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="content">
+    <section id="home" class="home section">
+      <div class="hero-content">
+        <h1 class="hero-title">WELCOME</h1>
+        <p class="hero-subtitle">Discover my passion, journey, and interests</p>
+        <button id="explore-btn" class="btn btn-explore">Explore</button>
+      </div>
+    </section>
+
+    <section id="about" class="about section container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img id="profile-photo" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80&auto=format&fit=crop" alt="Profile photo"/>
+        </div>
+        <div class="about-text">
+          <h3 id="name">Your Name</h3>
+          <p id="bio">A short bio goes here. I build things, learn, and enjoy creative projects.</p>
+          <p>Add more details about your journey, interests, and goals here. This is your story.</p>
+          <a class="cta" href="#contact">Get in touch</a>
+        </div>
+
+        <div class="about-box strengths-box">
+          <h4>My Strengths</h4>
+          <ul class="arrow-list">
+            <li>Creative problem-solving skills</li>
+            <li>Strong attention to detail</li>
+            <li>Quick learner and adaptable</li>
+            <li>Excellent communication abilities</li>
+          </ul>
+        </div>
+
+        <div class="about-box goals-box">
+          <h4>My Goals</h4>
+          <ul class="arrow-list">
+            <li>Build impactful digital products</li>
+            <li>Continuously improve my craft</li>
+            <li>Help others achieve their goals</li>
+            <li>Create positive change in the world</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <section id="hobbies" class="hobbies section container">
+      <h2>Hobbies</h2>
+      <div id="hobbies-grid" class="grid"></div>
+    </section>
+
+    <section id="likes" class="likes section container">
+      <h2 class="section-title">Likes & Dislikes</h2>
+      <div class="likes-grid">
+        <div class="likes-col">
+          <h3>What I Like</h3>
+          <div id="likes-list" class="cards-stack"></div>
+        </div>
+        <div class="dislikes-col">
+          <h3>What I Dislike</h3>
+          <div id="dislikes-list" class="cards-stack"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section container">
+      <div class="contact-wrapper">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-card">
+          <div class="contact-item">
+            <div class="contact-icon">✉️</div>
+            <div class="contact-content">
+              <p class="contact-label">Email</p>
+              <p class="contact-value" id="contact-email">your.email@example.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div class="contact-content">
+              <p class="contact-label">Phone</p>
+              <p class="contact-value" id="contact-phone">+1 (555) 123-4567</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">© <span id="footer-year"></span> My Portfolio. All rights reserved.</div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
